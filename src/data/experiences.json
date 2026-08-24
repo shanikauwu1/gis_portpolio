@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "period": "2024 – Present",
+        "title": "GIS & Geospatial Developer",
+        "company": "Professional / Academic Projects",
+        "description": [
+            "Working with GIS, spatial analysis, remote sensing, and web mapping to create interactive geospatial applications and data-driven solutions.",
+            "Developing maps, spatial analysis workflows, and geospatial applications using ArcGIS Pro and ArcGIS Online.",
+            "Working with remote sensing, raster analysis, and geospatial datasets."
+        ]
+    },
+    {
+        "id": 2,
+        "period": "2021 – 2024",
+        "title": "Web Developer",
+        "company": "BlueWave Labs",
+        "description": [
+            "Developed and maintained scalable web applications using React, JavaScript, Node.js, and MongoDB.",
+            "Built responsive and user-friendly interfaces for data-driven web applications.",
+            "Collaborated with developers and project stakeholders to understand requirements and deliver solutions.",
+            "Worked with GitHub, APIs, and modern frontend development practices."
+        ]
+    },
+    {
+        "id": 3,
+        "period": "2019 – 2021",
+        "title": "Web Developer",
+        "company": "Software Development",
+        "description": [
+            "Worked on web application development and contributed to frontend and backend solutions.",
+            "Developed responsive websites and web applications using JavaScript, PHP, Laravel, and MySQL.",
+            "Worked with databases, APIs, and server-side application development."
+        ]
+    },
+    {
+        "id": 4,
+        "period": "2011 – 2015",
+        "title": "PHP Developer",
+        "company": "Software Development",
+        "description": [
+            "Developed and maintained web applications using PHP and MySQL.",
+            "Built frontend and backend functionality for business and client websites.",
+            "Worked with other developers and stakeholders to understand requirements and deliver projects."
+        ]
+    }
+]

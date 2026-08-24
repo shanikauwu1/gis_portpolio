@@ -5,7 +5,7 @@
     "category": "Remote Sensing & GIS",
     "shortDescription": "A remote sensing project focused on identifying and mapping wetland areas using multispectral imagery, NDWI, supervised classification, and LiDAR-derived information.",
     "description": "This project focused on identifying and mapping wetland areas using multispectral imagery and LiDAR-derived information. Remote sensing and GIS techniques were used to analyze vegetation, water, and wetland characteristics.",
-    "image": "/projects/wetland.png",
+    "image": "/projects/wetlands.jpg",
     "technologies": [
       "ArcGIS Pro",
       "Remote Sensing",
@@ -79,7 +79,7 @@
     "category": "GIS & Spatial Analysis",
     "shortDescription": "A GIS analysis that evaluates rooftop solar potential in Calgary using solar radiation, building footprints, elevation data, and neighbourhood-level information.",
     "description": "This project evaluates rooftop solar potential across Calgary by combining solar radiation data, building footprints, elevation data, and neighbourhood-level information.",
-    "image": "/projects/solar.png",
+    "image": "/projects/solar.jpg",
     "technologies": [
       "ArcGIS Pro",
       "Spatial Analysis",
@@ -148,7 +148,7 @@
     "category": "Urban GIS",
     "shortDescription": "An urban GIS analysis examining tree canopy coverage across Calgary neighbourhoods and calculating canopy area to support better understanding of urban vegetation.",
     "description": "This project examined urban tree canopy coverage across Calgary neighbourhoods using GIS and spatial analysis techniques.",
-    "image": "/projects/tree-canopy.png",
+    "image": "/projects/Map.jpg",
     "technologies": [
       "ArcGIS Pro",
       "ArcGIS Online",
@@ -217,7 +217,7 @@
     "category": "Web GIS & Spatial Analysis",
     "shortDescription": "An interactive GIS application analyzing January 2024 assault incidents using neighbourhood boundaries, density analysis, custom geoprocessing tools, and web mapping.",
     "description": "This project analyzes January 2024 assault incidents using GIS, spatial analysis, ModelBuilder, ArcGIS Online, and Experience Builder.",
-    "image": "/projects/assault.png",
+    "image": "/projects/Density_Map.jpg",
     "technologies": [
       "ArcGIS Pro",
       "ModelBuilder",

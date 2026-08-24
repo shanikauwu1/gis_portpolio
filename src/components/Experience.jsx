@@ -1,36 +1,7 @@
-function Experience() {
-  const experiences = [
-    {
-      period: "2024 – Present",
-      title: "GIS & Geospatial Developer",
-      company: "Professional / Academic Projects",
-      description:
-        "Working with GIS, spatial analysis, remote sensing, and web mapping to create interactive geospatial applications and data-driven solutions.",
-      technologies: [
-        "ArcGIS Pro",
-        "ArcGIS Online",
-        "Remote Sensing",
-        "Web GIS",
-      ],
-    },
-    {
-      period: "2021 – 2024",
-      title: "Web Developer",
-      company: "BlueWave Labs",
-      description:
-        "Developed and maintained web applications using React, JavaScript, Node.js, and database technologies. Collaborated on responsive interfaces and data-driven applications.",
-      technologies: ["React", "JavaScript", "Node.js", "MongoDB"],
-    },
-    {
-      period: "2019 – 2021",
-      title: "Web Developer",
-      company: "Software Development",
-      description:
-        "Worked on web application development and contributed to frontend and backend solutions using modern web technologies.",
-      technologies: ["JavaScript", "PHP", "Laravel", "MySQL"],
-    },
-  ];
+import { FaCheckCircle } from "react-icons/fa";
+import experiences from "../data/experiences.json";
 
+function Experience() {
   return (
     <section
       id="experience"
@@ -40,6 +11,7 @@ function Experience() {
         bg-white
         px-6
         py-20
+        font-mono
         text-gray-900
         transition-colors
         duration-300
@@ -54,235 +26,258 @@ function Experience() {
     >
       <div className="mx-auto max-w-6xl">
         {/* Section Heading */}
-        <div className="mb-14">
-          <p
-            className="
-              mb-2
-              text-sm
-              font-semibold
-              uppercase
-              tracking-[0.2em]
-              text-gray-500
-              dark:text-gray-400
-            "
-          >
-            My Journey
-          </p>
-
+        <div className="mb-12">
           <h2
             className="
               text-3xl
               font-bold
+              tracking-tight
               text-gray-900
+
               dark:text-white
+
               md:text-4xl
             "
           >
-            Experience
+            My Experience
           </h2>
-
-          <p
-            className="
-              mt-4
-              max-w-2xl
-              text-gray-600
-              dark:text-gray-300
-            "
-          >
-            My professional journey across web development, GIS, and geospatial
-            technology.
-          </p>
         </div>
 
         {/* Timeline */}
         <div className="relative">
-          {/* Timeline Line */}
+          {/* ================= TIMELINE LINE ================= */}
           <div
             className="
               absolute
-              left-[7px]
-              top-2
+              left-1.75
+              top-0
               h-full
-              w-px
-              bg-gray-300
+              w-0.75
+              bg-(--secondary)
 
-              dark:bg-gray-700
+              dark:bg-(--secondary-dark)
 
-              md:left-1/2
+              md:left-[43%]
               md:-translate-x-1/2
             "
           />
 
-          <div className="space-y-12">
+          <div className="space-y-16">
             {experiences.map((experience, index) => (
               <div
-                key={experience.title + experience.period}
+                key={`${experience.title}-${experience.period}`}
                 className="
+                  group
                   relative
                   grid
-                  md:grid-cols-2
-                  md:gap-12
+                  grid-cols-1
+
+                  md:grid-cols-[43%_57%]
                 "
               >
-                {/* Timeline Dot */}
+                {/* ================= TIMELINE CIRCLE ================= */}
                 <div
                   className="
-                    absolute
-                    left-0
-                    top-1
-                    z-10
-                    flex
-                    h-4
-                    w-4
-                    items-center
-                    justify-center
-                    rounded-full
-                    border-2
-                    border-gray-900
-                    bg-white
+    absolute
+    -left-1.5
+    top-0
+    z-20
+    h-7
+    w-7
+    rounded-full
 
-                    dark:border-white
-                    dark:bg-gray-950
+    border-[3px]
+    border-(--secondary)
+    bg-white
 
-                    md:left-1/2
-                    md:-translate-x-1/2
+    shadow-sm
+    transition-all
+    duration-300
+
+    group-hover:bg-(--secondary)
+    group-hover:border-(--secondary)
+
+    dark:border-(--secondary-dark)
+    dark:bg-gray-950
+
+    dark:group-hover:bg-(--secondary-dark)
+    dark:group-hover:border-(--secondary-dark)
+
+    md:left-[43%]
+    md:-translate-x-1/2
+  "
+                >
+                  {/* Inner Dot */}
+                  <div
+                    className="
+      absolute
+      left-1/2
+      top-1/2
+      h-2
+      w-2
+      -translate-x-1/2
+      -translate-y-1/2
+      rounded-full
+
+      bg-(--secondary)
+      group-hover:bg-white
+
+      dark:bg-(--secondary-dark)
+      dark:group-hover:bg-gray-950
+    "
+                  />
+                </div>
+
+                {/* ================= LEFT INFORMATION ================= */}
+                <div
+                  className="
+                    ml-12
+                    pr-6
+
+                    md:ml-0
+                    md:pr-16
+                    md:text-right
+                  "
+                >
+                  {/* Period */}
+                  <p
+                    className="
+                      text-sm
+                      font-bold
+                      tracking-wide
+                      text-gray-900
+
+                      dark:text-white
+
+                      md:text-base
+                    "
+                  >
+                    {experience.period}
+                  </p>
+
+                  {/* Job Title */}
+                  <h3
+                    className="
+                      mt-2
+                      text-sm
+                      font-bold
+                      text-gray-900
+
+                      transition-colors
+                      duration-300
+
+                      hover:text-(--secondary)
+
+                      dark:text-white
+                      dark:hover:text-(--secondary-dark)
+
+                      md:text-base
+                    "
+                  >
+                    {experience.title}
+                  </h3>
+
+                  {/* Company */}
+                  <p
+                    className="
+                      mt-1
+                      max-w-xs
+                      text-xs
+                      leading-5
+                      text-gray-500
+
+                      dark:text-gray-400
+
+                      md:ml-auto
+                    "
+                  >
+                    {experience.company}
+                  </p>
+                </div>
+
+                {/* ================= RIGHT CARD ================= */}
+                <div
+                  className="
+                    ml-12
+                    mt-6
+
+                    md:ml-0
+                    md:mt-0
+                    md:pl-10
                   "
                 >
                   <div
                     className="
-                      h-1.5
-                      w-1.5
-                      rounded-full
-                      bg-gray-900
-
-                      dark:bg-white
-                    "
-                  />
-                </div>
-
-                {/* Date */}
-                <div
-                  className={`
-                    ml-8
-                    pb-2
-
-                    md:ml-0
-                    md:pr-12
-
-                    ${
-                      index % 2 === 0
-                        ? "md:text-right"
-                        : "md:order-2 md:pl-12 md:text-left"
-                    }
-                  `}
-                >
-                  <span
-                    className="
-                      text-sm
-                      font-medium
-                      text-gray-500
-
-                      dark:text-gray-400
-                    "
-                  >
-                    {experience.period}
-                  </span>
-                </div>
-
-                {/* Experience Card */}
-                <div
-                  className={`
-                    ml-8
-
-                    md:ml-0
-
-                    ${index % 2 === 0 ? "md:pl-12" : "md:order-1 md:pr-12"}
-                  `}
-                >
-                  <div
-                    className="
+                      max-w-xl
                       rounded-2xl
+
                       border
                       border-gray-200
                       bg-gray-50
-                      p-6
+
+                      px-6
+                      py-5
+
                       shadow-sm
 
                       transition-all
                       duration-300
 
-                      hover:-translate-y-1
-                      hover:shadow-lg
+                      group-hover:-translate-y-1
+                      group-hover:border-(--secondary)
+                      group-hover:bg-(--secondary)
+                      group-hover:shadow-[0_8px_30px_rgba(255,93,151,0.12)]
 
                       dark:border-gray-800
                       dark:bg-gray-900
                       dark:shadow-black/20
 
-                      dark:hover:border-gray-700
-                      dark:hover:shadow-black/40
+                      dark:group-hover:border-(--secondary-dark)
+                      dark:group-hover:bg-(--secondary-dark)
+                      dark:group-hover:shadow-[0_8px_30px_rgba(243,166,194,0.10)]
                     "
                   >
-                    {/* Job Title */}
-                    <h3
-                      className="
-                        text-xl
-                        font-semibold
-                        text-gray-900
-
-                        dark:text-white
-                      "
-                    >
-                      {experience.title}
-                    </h3>
-
-                    {/* Company */}
-                    <p
-                      className="
-                        mt-1
-                        text-sm
-                        font-medium
-                        text-gray-500
-
-                        dark:text-gray-400
-                      "
-                    >
-                      {experience.company}
-                    </p>
-
-                    {/* Description */}
-                    <p
-                      className="
-                        mt-4
-                        text-sm
-                        leading-7
-                        text-gray-600
-
-                        dark:text-gray-300
-                      "
-                    >
-                      {experience.description}
-                    </p>
-
-                    {/* Technologies */}
-                    <div className="mt-5 flex flex-wrap gap-2">
-                      {experience.technologies.map((technology) => (
-                        <span
-                          key={technology}
+                    <div className="space-y-3">
+                      {experience.description.map((item, descriptionIndex) => (
+                        <div
+                          key={descriptionIndex}
                           className="
-                            rounded-md
-                            border
-                            border-gray-300
-                            px-2.5
-                            py-1
-                            text-xs
-                            text-gray-600
+                              flex
+                              items-start
+                              gap-3
+                              text-sm
+                              leading-6
+                              text-gray-600
 
-                            dark:border-gray-700
-                            dark:text-gray-400
-                          "
+                              transition-colors
+                              duration-300
+
+                              group-hover:text-white
+
+                              dark:text-gray-400
+                            "
                         >
-                          {technology}
-                        </span>
+                          {/* Theme Bullet */}
+                          <FaCheckCircle
+                            className="
+                                mt-1
+                                shrink-0
+                                text-[15px]
+
+                                text-(--secondary)
+                                group-hover:text-white
+
+                                transition-transform
+                                duration-300
+
+                                group-hover:scale-110
+
+                                dark:text-(--secondary-dark)
+                              "
+                          />
+
+                          <span>{item}</span>
+                        </div>
                       ))}
                     </div>
                   </div>
