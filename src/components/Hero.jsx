@@ -22,8 +22,7 @@ function Hero() {
       />
 
       {/* Background Overlay */}
-      <div className="absolute inset-0 bg-white/50 dark:bg-gray-950/60" />
-
+      <div className="absolute inset-0 bg-white/40 dark:bg-gray-950/50" />
       {/* Main Content */}
       <div
         className="

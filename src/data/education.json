@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "degree": "Bachelor of GIS (BGIS)",
+        "institution": "SAIT",
+        "location": "Calgary, Alberta",
+        "year": "2026"
+    },
+    {
+        "id": 2,
+        "degree": "Master of Science in Computer Science",
+        "institution": "University of Peradeniya",
+        "location": "Sri Lanka",
+        "year": "2019 – 2021"
+    },
+    {
+        "id": 3,
+        "degree": "Bachelor of Science in Computer Science & Technology",
+        "institution": "Uva Wellassa University",
+        "location": "Sri Lanka",
+        "year": "2007 – 2011"
+    }
+]
