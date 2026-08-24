@@ -1,0 +1,288 @@
+[
+  {
+    "id": "wetland-mapping",
+    "title": "Wetland Mapping Using Remote Sensing",
+    "category": "Remote Sensing & GIS",
+    "shortDescription": "A remote sensing project focused on identifying and mapping wetland areas using multispectral imagery, NDWI, supervised classification, and LiDAR-derived information.",
+    "description": "This project focused on identifying and mapping wetland areas using multispectral imagery and LiDAR-derived information. Remote sensing and GIS techniques were used to analyze vegetation, water, and wetland characteristics.",
+    "image": "/projects/wetland.png",
+    "technologies": [
+      "ArcGIS Pro",
+      "Remote Sensing",
+      "LiDAR",
+      "NDWI"
+    ],
+    "year": "2025",
+    "projectType": "Academic Project",
+    "overview": "The objective of this project was to identify and map wetland areas using remote sensing imagery and LiDAR data. The analysis combined spectral information with spatial analysis techniques to produce a detailed wetland map.",
+    "objectives": [
+      "Identify potential wetland areas.",
+      "Analyze multispectral imagery.",
+      "Use NDWI to identify water and wet areas.",
+      "Integrate LiDAR-derived information.",
+      "Evaluate the accuracy of the classification."
+    ],
+    "methodology": [
+      {
+        "step": "01",
+        "title": "Data Preparation",
+        "description": "Prepared multispectral imagery, LiDAR data, and supporting GIS datasets for analysis."
+      },
+      {
+        "step": "02",
+        "title": "NDWI Analysis",
+        "description": "Calculated the Normalized Difference Water Index (NDWI) to identify water and wet areas."
+      },
+      {
+        "step": "03",
+        "title": "Image Classification",
+        "description": "Performed supervised classification to separate wetland, vegetation, water, and other land-cover classes."
+      },
+      {
+        "step": "04",
+        "title": "Accuracy Assessment",
+        "description": "Evaluated the classification results using validation points and accuracy statistics."
+      }
+    ],
+    "results": [
+      {
+        "label": "Overall Accuracy",
+        "value": "84.08%"
+      },
+      {
+        "label": "Kappa",
+        "value": "0.75"
+      },
+      {
+        "label": "Analysis",
+        "value": "Wetland areas successfully identified and mapped"
+      }
+    ],
+    "gallery": [
+      {
+        "image": "/projects/wetland.png",
+        "caption": "Wetland classification map"
+      },
+      {
+        "image": "/projects/wetland-map.png",
+        "caption": "Wetland analysis"
+      }
+    ],
+    "links": {
+      "live": "#",
+      "source": "#"
+    }
+  },
+  {
+    "id": "calgary-rooftop-solar",
+    "title": "Calgary Rooftop Solar Potential",
+    "category": "GIS & Spatial Analysis",
+    "shortDescription": "A GIS analysis that evaluates rooftop solar potential in Calgary using solar radiation, building footprints, elevation data, and neighbourhood-level information.",
+    "description": "This project evaluates rooftop solar potential across Calgary by combining solar radiation data, building footprints, elevation data, and neighbourhood-level information.",
+    "image": "/projects/solar.png",
+    "technologies": [
+      "ArcGIS Pro",
+      "Spatial Analysis",
+      "Raster Analysis",
+      "ModelBuilder"
+    ],
+    "year": "2025",
+    "projectType": "Academic Project",
+    "overview": "The goal of this project was to estimate rooftop solar potential across Calgary and identify neighbourhoods with greater potential for solar energy generation.",
+    "objectives": [
+      "Analyze solar radiation across Calgary.",
+      "Identify suitable building rooftops.",
+      "Calculate potential solar energy.",
+      "Compare solar potential between neighbourhoods."
+    ],
+    "methodology": [
+      {
+        "step": "01",
+        "title": "Data Preparation",
+        "description": "Prepared building footprints, elevation data, solar radiation rasters, and neighbourhood boundaries."
+      },
+      {
+        "step": "02",
+        "title": "Solar Radiation Analysis",
+        "description": "Analyzed solar radiation values across the study area."
+      },
+      {
+        "step": "03",
+        "title": "Building Analysis",
+        "description": "Used building footprints and zonal statistics to summarize solar radiation for individual buildings."
+      },
+      {
+        "step": "04",
+        "title": "Neighbourhood Analysis",
+        "description": "Aggregated results by neighbourhood to compare rooftop solar potential."
+      }
+    ],
+    "results": [
+      {
+        "label": "Analysis Type",
+        "value": "Rooftop solar potential"
+      },
+      {
+        "label": "Study Area",
+        "value": "Calgary, Alberta"
+      },
+      {
+        "label": "Output",
+        "value": "Neighbourhood-level solar potential"
+      }
+    ],
+    "gallery": [
+      {
+        "image": "/projects/solar.png",
+        "caption": "Calgary rooftop solar potential"
+      }
+    ],
+    "links": {
+      "live": "#",
+      "source": "#"
+    }
+  },
+  {
+    "id": "urban-tree-canopy",
+    "title": "Urban Tree Canopy Analysis",
+    "category": "Urban GIS",
+    "shortDescription": "An urban GIS analysis examining tree canopy coverage across Calgary neighbourhoods and calculating canopy area to support better understanding of urban vegetation.",
+    "description": "This project examined urban tree canopy coverage across Calgary neighbourhoods using GIS and spatial analysis techniques.",
+    "image": "/projects/tree-canopy.png",
+    "technologies": [
+      "ArcGIS Pro",
+      "ArcGIS Online",
+      "Spatial Analysis",
+      "Web GIS"
+    ],
+    "year": "2025",
+    "projectType": "GIS Project",
+    "overview": "The project analyzed tree canopy distribution across Calgary neighbourhoods to better understand urban vegetation patterns.",
+    "objectives": [
+      "Map urban tree canopy.",
+      "Calculate canopy area.",
+      "Compare canopy coverage between neighbourhoods.",
+      "Visualize the results using Web GIS."
+    ],
+    "methodology": [
+      {
+        "step": "01",
+        "title": "Data Preparation",
+        "description": "Prepared tree canopy and neighbourhood boundary datasets."
+      },
+      {
+        "step": "02",
+        "title": "Spatial Analysis",
+        "description": "Performed spatial analysis to determine tree canopy coverage."
+      },
+      {
+        "step": "03",
+        "title": "Area Calculation",
+        "description": "Calculated tree canopy area for each neighbourhood."
+      },
+      {
+        "step": "04",
+        "title": "Web Mapping",
+        "description": "Published and visualized the results using ArcGIS Online."
+      }
+    ],
+    "results": [
+      {
+        "label": "Analysis",
+        "value": "Urban tree canopy coverage"
+      },
+      {
+        "label": "Study Area",
+        "value": "Calgary, Alberta"
+      },
+      {
+        "label": "Output",
+        "value": "Neighbourhood-level canopy analysis"
+      }
+    ],
+    "gallery": [
+      {
+        "image": "/projects/tree-canopy.png",
+        "caption": "Urban tree canopy analysis"
+      }
+    ],
+    "links": {
+      "live": "#",
+      "source": "#"
+    }
+  },
+  {
+    "id": "assault-data-dashboard",
+    "title": "Assault Data Analysis & Dashboard",
+    "category": "Web GIS & Spatial Analysis",
+    "shortDescription": "An interactive GIS application analyzing January 2024 assault incidents using neighbourhood boundaries, density analysis, custom geoprocessing tools, and web mapping.",
+    "description": "This project analyzes January 2024 assault incidents using GIS, spatial analysis, ModelBuilder, ArcGIS Online, and Experience Builder.",
+    "image": "/projects/assault.png",
+    "technologies": [
+      "ArcGIS Pro",
+      "ModelBuilder",
+      "ArcGIS Online",
+      "Experience Builder"
+    ],
+    "year": "2026",
+    "projectType": "Capstone Project",
+    "overview": "The project was developed as an interactive web GIS application for exploring assault incidents in January 2024. It combines spatial analysis, density mapping, custom geoprocessing tools, dashboards, and web mapping.",
+    "objectives": [
+      "Analyze January 2024 assault incidents.",
+      "Identify spatial patterns of assault.",
+      "Analyze assault density by neighbourhood.",
+      "Create a custom geoprocessing tool.",
+      "Develop an interactive web GIS application."
+    ],
+    "methodology": [
+      {
+        "step": "01",
+        "title": "Data Preparation",
+        "description": "Prepared the January 2024 assault incident dataset and neighbourhood boundaries."
+      },
+      {
+        "step": "02",
+        "title": "Density Analysis",
+        "description": "Analyzed the spatial distribution and density of assault incidents."
+      },
+      {
+        "step": "03",
+        "title": "Custom Tool",
+        "description": "Developed a ModelBuilder tool to summarize assault incidents by assault type."
+      },
+      {
+        "step": "04",
+        "title": "Web GIS",
+        "description": "Published the GIS layers and custom tool to ArcGIS Online and integrated them into Experience Builder."
+      }
+    ],
+    "results": [
+      {
+        "label": "Data",
+        "value": "January 2024 assault incidents"
+      },
+      {
+        "label": "Custom Tool",
+        "value": "Assault summary by assault type"
+      },
+      {
+        "label": "Web Application",
+        "value": "ArcGIS Experience Builder"
+      }
+    ],
+    "gallery": [
+      {
+        "image": "/projects/assault.png",
+        "caption": "Assault analysis dashboard"
+      },
+      {
+        "image": "/projects/assault-density.png",
+        "caption": "Assault density analysis"
+      }
+    ],
+    "links": {
+      "live": "#",
+      "source": "#"
+    }
+  }
+]
