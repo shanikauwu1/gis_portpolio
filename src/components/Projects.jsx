@@ -39,6 +39,18 @@ function Projects() {
           >
             Projects
           </h2>
+
+          <div
+            className="
+      mt-4
+      h-1
+      w-12
+      rounded-full
+      bg-gray-900
+
+      dark:bg-gray-200
+    "
+          />
         </div>
 
         {/* Projects Grid */}
@@ -60,14 +72,14 @@ function Projects() {
                 duration-300
 
                 hover:-translate-y-1
-                hover:border-[var(--secondary)]
+                hover:border-(--secondary)
                 hover:shadow-[0_8px_30px_rgba(255,93,151,0.12)]
 
                 dark:border-gray-800
                 dark:bg-gray-900
                 dark:shadow-black/20
 
-                dark:hover:border-[var(--secondary-dark)]
+                dark:hover:border-(--secondary-dark)
                 dark:hover:shadow-[0_8px_30px_rgba(243,166,194,0.10)]
               "
             >
@@ -207,31 +219,35 @@ function Projects() {
                 <Link
                   to={`/projects/${project.id}`}
                   className="
-                    rounded-md
-                    border
-                    border-gray-400
-                    px-5
-                    py-2
-                    text-sm
-                    font-medium
-                    text-gray-800
+    animated-button
+    group
+    relative
+    inline-flex
+    items-center
+    gap-2
+    overflow-hidden
+    rounded-md
+    bg-gray-900
+    px-5
+    py-2
+    text-sm
+    font-medium
+    text-white
 
-                    transition-all
-                    duration-300
+    shadow-lg
+    shadow-gray-900/20
 
-                    hover:border-[var(--secondary)]
-                    hover:bg-[var(--secondary)]
-                    hover:text-white
-                    hover:shadow-[0_4px_15px_rgba(255,93,151,0.25)]
+    transition-all
+    duration-300
 
-                    dark:border-gray-500
-                    dark:text-gray-200
+    hover:bg-(--secondary)
+    hover:shadow-lg
+    hover:shadow-(--secondary)/30
 
-                    dark:hover:border-[var(--secondary-dark)]
-                    dark:hover:bg-[var(--secondary-dark)]
-                    dark:hover:text-gray-900
-                    dark:hover:shadow-[0_4px_15px_rgba(243,166,194,0.20)]
-                  "
+    dark:bg-white
+    dark:text-gray-900
+    dark:hover:bg-(--secondary-dark)
+  "
                 >
                   Full View
                 </Link>
@@ -242,27 +258,31 @@ function Projects() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="
-                    rounded-md
-                    border
-                    border-gray-300
-                    px-5
-                    py-2
-                    text-sm
-                    font-medium
-                    text-gray-600
+    rounded-md
+    border
+    border-gray-300
+    bg-gray-200
+    px-5
+    py-2
+    text-sm
+    font-medium
+    text-gray-900
 
-                    transition-all
-                    duration-300
+    transition-all
+    duration-300
 
-                    hover:border-[var(--secondary)]
-                    hover:text-[var(--secondary)]
+    hover:border-(--secondary)
+    hover:bg-(--secondary)
+    hover:text-white
 
-                    dark:border-gray-700
-                    dark:text-gray-400
+    dark:border-gray-700
+    dark:bg-gray-800
+    dark:text-gray-100
 
-                    dark:hover:border-[var(--secondary-dark)]
-                    dark:hover:text-[var(--secondary-dark)]
-                  "
+    dark:hover:border-(--secondary-dark)
+    dark:hover:bg-(--secondary-dark)
+    dark:hover:text-gray-900
+  "
                 >
                   Source Code
                 </a>

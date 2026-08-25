@@ -39,8 +39,19 @@ function Experience() {
               md:text-4xl
             "
           >
-            My Experience
+            Work Experience
           </h2>
+          <div
+            className="
+      mt-4
+      h-1
+      w-12
+      rounded-full
+      bg-gray-900
+
+      dark:bg-gray-200
+    "
+          />
         </div>
 
         {/* Timeline */}
@@ -142,8 +153,8 @@ function Experience() {
                   {/* Period */}
                   <p
                     className="
-                      text-sm
-                      font-bold
+                      text-md
+                      font-semibold
                       tracking-wide
                       text-gray-900
 
@@ -159,17 +170,15 @@ function Experience() {
                   <h3
                     className="
                       mt-2
-                      text-sm
+                      text-lg
                       font-bold
                       text-gray-900
 
                       transition-colors
                       duration-300
 
-                      hover:text-(--secondary)
-
                       dark:text-white
-                      dark:hover:text-(--secondary-dark)
+                   
 
                       md:text-base
                     "
@@ -182,7 +191,7 @@ function Experience() {
                     className="
                       mt-1
                       max-w-xs
-                      text-xs
+                      text-sm
                       leading-5
                       text-gray-500
 

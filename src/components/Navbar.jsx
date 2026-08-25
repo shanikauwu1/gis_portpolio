@@ -24,11 +24,14 @@ function Navbar() {
         className="
           mx-auto
           grid
-          h-20
+          h-16
           max-w-6xl
           grid-cols-3
           items-center
-          px-6
+          px-4
+          sm:h-18
+          sm:px-6
+          md:h-20
         "
       >
         {/* ================= LEFT - NAME ================= */}
@@ -39,7 +42,7 @@ function Navbar() {
               group
               relative
               inline-block
-              text-3xl
+              text-xl
               text-gray-600
               transition
               duration-300
@@ -51,7 +54,7 @@ function Navbar() {
               dark:hover:text-(--secondary-dark)
 
               after:absolute
-              after:-bottom-2
+              after:-bottom-1
               after:left-0
               after:h-0.5
               after:w-full
@@ -64,6 +67,11 @@ function Navbar() {
 
               hover:after:scale-x-100
 
+              sm:text-2xl
+              sm:after:-bottom-2
+
+              md:text-3xl
+
               dark:after:bg-(--secondary-dark)
             "
           >
@@ -72,7 +80,17 @@ function Navbar() {
         </div>
 
         {/* ================= CENTER - SOCIAL ICONS ================= */}
-        <div className="flex items-center justify-center gap-6">
+        <div
+          className="
+            flex
+            items-center
+            justify-center
+            gap-3
+
+            sm:gap-5
+            md:gap-6
+          "
+        >
           {/* LinkedIn */}
           <a
             href="https://www.linkedin.com/in/shanikajayawardane/"
@@ -91,7 +109,18 @@ function Navbar() {
               dark:hover:text-(--secondary-dark)
             "
           >
-            <FaLinkedinIn size={35} />
+            <FaLinkedinIn
+              className="
+                h-5
+                w-5
+
+                sm:h-6
+                sm:w-6
+
+                md:h-7
+                md:w-7
+              "
+            />
           </a>
 
           {/* GitHub */}
@@ -112,7 +141,18 @@ function Navbar() {
               dark:hover:text-(--secondary-dark)
             "
           >
-            <FaGithub size={35} />
+            <FaGithub
+              className="
+                h-5
+                w-5
+
+                sm:h-6
+                sm:w-6
+
+                md:h-7
+                md:w-7
+              "
+            />
           </a>
 
           {/* Email */}
@@ -131,12 +171,23 @@ function Navbar() {
               dark:hover:text-(--secondary-dark)
             "
           >
-            <FaEnvelope size={32} />
+            <FaEnvelope
+              className="
+                h-5
+                w-5
+
+                sm:h-6
+                sm:w-6
+
+                md:h-7
+                md:w-7
+              "
+            />
           </a>
         </div>
 
         {/* ================= RIGHT - THEME TOGGLE ================= */}
-        <div className="flex justify-self-end">
+        <div className="justify-self-end">
           <ThemeToggle />
         </div>
       </div>
@@ -144,9 +195,9 @@ function Navbar() {
       {/* ================= SECOND ROW ================= */}
       <div
         className="
-          border-t
+          border
           border-gray-200/60
-          bg-gray-50
+          bg-gray-200
 
           dark:border-gray-800/60
           dark:bg-black/90
@@ -155,10 +206,16 @@ function Navbar() {
         <div
           className="
             flex
-            h-14
+            h-11
             items-center
             justify-center
-            gap-12
+            gap-7
+
+            sm:h-12
+            sm:gap-9
+
+            md:h-14
+            md:gap-12
           "
         >
           {/* ================= PORTFOLIO ================= */}
@@ -168,7 +225,7 @@ function Navbar() {
               group
               relative
               inline-block
-              text-2xl
+              text-base
               font-medium
               text-gray-600
               transition
@@ -193,6 +250,10 @@ function Navbar() {
               after:content-['']
 
               hover:after:scale-x-100
+
+              sm:text-lg
+
+              md:text-2xl
 
               dark:after:bg-(--secondary-dark)
             "
@@ -207,7 +268,7 @@ function Navbar() {
               group
               relative
               inline-block
-              text-2xl
+              text-base
               font-medium
               text-gray-600
               transition
@@ -232,6 +293,10 @@ function Navbar() {
               after:content-['']
 
               hover:after:scale-x-100
+
+              sm:text-lg
+
+              md:text-2xl
 
               dark:after:bg-(--secondary-dark)
             "
