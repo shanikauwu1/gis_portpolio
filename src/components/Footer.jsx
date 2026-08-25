@@ -19,23 +19,42 @@ function Footer() {
         className="
           mx-auto
           flex
-          h-20
+          h-16
           max-w-7xl
           items-center
           justify-between
-          px-6
+          gap-4
+          px-4
+
+          sm:h-18
+          sm:px-6
+
+          md:h-20
+          md:px-6
         "
       >
-        {/* SE Logo */}
-        <div className="relative text-2xl font-bold tracking-tight">
+        {/* ================= SE LOGO ================= */}
+        <div
+          className="
+            relative
+            shrink-0
+            text-xl
+            font-bold
+            tracking-tight
+
+            sm:text-2xl
+          "
+        >
           <span className="text-gray-800 dark:text-gray-200">S</span>
 
           <span
             className="
               absolute
-              left-3
+              left-2.5
               top-0
               text-gray-500
+
+              sm:left-3
 
               dark:text-gray-400
             "
@@ -44,11 +63,16 @@ function Footer() {
           </span>
         </div>
 
-        {/* Copyright */}
+        {/* ================= COPYRIGHT ================= */}
         <p
           className="
-            text-sm
+            min-w-0
+            truncate
+            text-center
+            text-xs
             text-gray-500
+
+            sm:text-sm
 
             dark:text-gray-400
           "
@@ -56,8 +80,19 @@ function Footer() {
           © {new Date().getFullYear()} Shanika Ekanayake
         </p>
 
-        {/* Contact Icons */}
-        <div className="flex items-center gap-5">
+        {/* ================= CONTACT ICONS ================= */}
+        <div
+          className="
+            flex
+            shrink-0
+            items-center
+            gap-3
+
+            sm:gap-4
+
+            md:gap-5
+          "
+        >
           {/* LinkedIn */}
           <a
             href="https://www.linkedin.com/"
@@ -69,13 +104,24 @@ function Footer() {
               transition-colors
               duration-200
 
-              hover:text-[var(--secondary)]
+              hover:text-(--secondary)
 
               dark:text-gray-400
-              dark:hover:text-[var(--secondary-dark)]
+              dark:hover:text-(--secondary-dark)
             "
           >
-            <FaLinkedinIn size={28} />
+            <FaLinkedinIn
+              className="
+                h-5
+                w-5
+
+                sm:h-6
+                sm:w-6
+
+                md:h-7
+                md:w-7
+              "
+            />
           </a>
 
           {/* GitHub */}
@@ -89,13 +135,24 @@ function Footer() {
               transition-colors
               duration-200
 
-              hover:text-[var(--secondary)]
+              hover:text-(--secondary)
 
               dark:text-gray-400
-              dark:hover:text-[var(--secondary-dark)]
+              dark:hover:text-(--secondary-dark)
             "
           >
-            <FaGithub size={28} />
+            <FaGithub
+              className="
+                h-5
+                w-5
+
+                sm:h-6
+                sm:w-6
+
+                md:h-7
+                md:w-7
+              "
+            />
           </a>
 
           {/* Email */}
@@ -107,13 +164,24 @@ function Footer() {
               transition-colors
               duration-200
 
-              hover:text-[var(--secondary)]
+              hover:text-(--secondary)
 
               dark:text-gray-400
-              dark:hover:text-[var(--secondary-dark)]
+              dark:hover:text-(--secondary-dark)
             "
           >
-            <FaEnvelope size={28} />
+            <FaEnvelope
+              className="
+                h-5
+                w-5
+
+                sm:h-6
+                sm:w-6
+
+                md:h-7
+                md:w-7
+              "
+            />
           </a>
         </div>
       </div>

@@ -135,6 +135,18 @@ function Skills() {
           >
             Skills & Technologies
           </h2>
+
+          <div
+            className="
+      mt-4
+      h-1
+      w-12
+      rounded-full
+      bg-gray-900
+
+      dark:bg-gray-200
+    "
+          />
         </div>
 
         {/* Skill Categories */}
