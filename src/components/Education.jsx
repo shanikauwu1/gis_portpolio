@@ -61,7 +61,7 @@ function Education() {
                 group
                 rounded-2xl
                 border
-                border-gray-200
+                border-gray-100
                 bg-gray-50
                 p-6
 
@@ -98,7 +98,7 @@ function Education() {
 
                     border
                     border-gray-200
-                    bg-white
+                    bg-gray-200
                     text-lg
 
                     transition-colors
@@ -108,7 +108,7 @@ function Education() {
                     group-hover:bg-white/20
 
                     dark:border-gray-700
-                    dark:bg-gray-100
+                    dark:bg-gray-300
 
                     dark:group-hover:border-white
                     dark:group-hover:bg-white/20
