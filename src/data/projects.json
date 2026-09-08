@@ -284,5 +284,133 @@
       "live": "#",
       "source": "#"
     }
+  },
+  {
+    "id": "supervised-landcover-classification",
+    "title": "Supervised Landcover Classification Using Remote Sensing",
+    "category": "Remote Sensing & GIS",
+    "shortDescription": "A supervised remote sensing project comparing Maximum Likelihood and Support Vector Machine classification algorithms using multispectral satellite imagery to map landcover and assess classification accuracy.",
+    "description": "This project was developed for the Ledum Land Trust (LLT) to support ecological assessment planning near Waiparous, Alberta. Multispectral satellite imagery was classified using supervised Maximum Likelihood and Support Vector Machine algorithms. Training and testing data were created to classify the study area into Developed, Tree/Shrub, Grassland, and Water classes. The classification results were evaluated using stratified accuracy assessment points, and landcover areas were quantified for comparison.",
+    "image": "/projects/landcover-classification.jpg",
+    "technologies": [
+      "ArcGIS Pro",
+      "Remote Sensing",
+      "Multispectral Imagery",
+      "Maximum Likelihood Classification",
+      "Support Vector Machine",
+      "Spatial Analysis",
+      "Accuracy Assessment"
+    ],
+    "year": "2026",
+    "projectType": "Academic Project",
+    "overview": "The objective of this project was to develop a reliable landcover classification of a conservation study area near Waiparous, Alberta. Two multispectral satellite imagery datasets were analyzed using Maximum Likelihood and Support Vector Machine algorithms. The resulting classifications were assessed for accuracy and compared to determine the most effective approach for landcover mapping and ecological field-data planning.",
+    "objectives": [
+      "Classify landcover within the LLT study area near Waiparous, Alberta.",
+      "Create representative training data for all defined landcover classes.",
+      "Generate 200 stratified testing points for classification accuracy assessment.",
+      "Compare Maximum Likelihood and Support Vector Machine classification algorithms.",
+      "Perform supervised classification using two multispectral imagery datasets.",
+      "Evaluate classification performance using confusion matrices and accuracy statistics.",
+      "Calculate the total area and relative proportion of each landcover class.",
+      "Identify the highest-accuracy classification for use in the final map product.",
+      "Produce a professional landcover map to support ecological assessment and field-data collection planning."
+    ],
+    "landcoverClasses": [
+      "Developed",
+      "Tree/Shrub",
+      "Grassland",
+      "Water"
+    ],
+    "methodology": [
+      {
+        "step": "01",
+        "title": "Study Area and Data Preparation",
+        "description": "Prepared the LLT study area boundary near Waiparous, Alberta and processed the instructor-provided and independently acquired multispectral satellite imagery for classification."
+      },
+      {
+        "step": "02",
+        "title": "Training Data Creation",
+        "description": "Created representative training samples for Developed, Tree/Shrub, Grassland, and Water classes, capturing spectral variation within and between landcover classes."
+      },
+      {
+        "step": "03",
+        "title": "Supervised Classification",
+        "description": "Performed supervised landcover classification using both Maximum Likelihood and Support Vector Machine algorithms on each imagery dataset."
+      },
+      {
+        "step": "04",
+        "title": "Accuracy Assessment",
+        "description": "Generated 200 stratified testing points based on the classification results and evaluated each classification using confusion matrices and accuracy statistics."
+      },
+      {
+        "step": "05",
+        "title": "Classification Comparison",
+        "description": "Compared the accuracy and performance of the four classification outputs to identify the most reliable landcover classification."
+      },
+      {
+        "step": "06",
+        "title": "Landcover Area Analysis",
+        "description": "Calculated the total area and relative proportion of Developed, Tree/Shrub, Grassland, and Water classes within the study area."
+      },
+      {
+        "step": "07",
+        "title": "Map Production",
+        "description": "Created a professional report-quality map layout displaying the highest-accuracy classification, landcover area statistics, and standard cartographic elements."
+      }
+    ],
+    "classificationMethods": [
+      {
+        "name": "Maximum Likelihood",
+        "description": "A statistical supervised classification method that assigns pixels to the landcover class with the highest probability based on the spectral characteristics of the training data."
+      },
+      {
+        "name": "Support Vector Machine",
+        "description": "A supervised machine-learning classification method that identifies optimal decision boundaries between landcover classes using the spectral characteristics of training samples."
+      }
+    ],
+    "results": [
+      {
+        "label": "Classification Methods",
+        "value": "Maximum Likelihood & Support Vector Machine"
+      },
+      {
+        "label": "Imagery Datasets",
+        "value": "2 multispectral satellite imagery datasets"
+      },
+      {
+        "label": "Accuracy Assessments",
+        "value": "4 classification accuracy assessments"
+      },
+      {
+        "label": "Testing Points",
+        "value": "200 stratified validation points"
+      },
+      {
+        "label": "Landcover Classes",
+        "value": "4 classes"
+      },
+      {
+        "label": "Final Output",
+        "value": "Highest-accuracy landcover classification and report-quality map"
+      }
+    ],
+    "gallery": [
+      {
+        "image": "/projects/landcover-classification.JPG",
+        "caption": "Supervised landcover classification map"
+      },
+      {
+        "image": "/projects/landcover-accuracy.png",
+        "caption": "Classification accuracy assessment"
+      },
+      {
+        "image": "/projects/landcover-map.png",
+        "caption": "Final report-quality landcover map"
+      }
+    ],
+    "links": {
+      "live": "#",
+      "source": "#"
+    }
   }
 ]

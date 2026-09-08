@@ -80,8 +80,8 @@ function ProjectDetails() {
         {/* Back to Projects */}
         {/* ========================================= */}
 
-        <Link
-          to="/projects"
+        <a
+          href="/#projects"
           className="
             inline-flex
             items-center
@@ -98,7 +98,7 @@ function ProjectDetails() {
           "
         >
           ← Back to Projects
-        </Link>
+        </a>
 
         {/* ========================================= */}
         {/* Project Header */}
@@ -650,8 +650,8 @@ function ProjectDetails() {
             dark:border-gray-800
           "
         >
-          <Link
-            to="/projects"
+          <a
+            href="/#projects"
             className="
               inline-flex
               text-sm
@@ -667,7 +667,7 @@ function ProjectDetails() {
             "
           >
             ← Back to All Projects
-          </Link>
+          </a>
         </div>
       </div>
     </main>

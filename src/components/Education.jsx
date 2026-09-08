@@ -1,4 +1,5 @@
 import education from "../data/education.json";
+import { FaGraduationCap } from "react-icons/fa";
 
 function Education() {
   return (
@@ -71,16 +72,16 @@ function Education() {
                 duration-300
 
                 hover:-translate-y-1
-                hover:border-[var(--secondary)]
-                hover:bg-[var(--secondary)]
+                hover:border-(--secondary)
+                hover:bg-(--secondary)
                 hover:shadow-[0_8px_30px_rgba(255,93,151,0.12)]
 
                 dark:border-gray-800
                 dark:bg-gray-900
                 dark:shadow-black/20
 
-                dark:hover:border-[var(--secondary-dark)]
-                dark:hover:bg-[var(--secondary-dark)]
+                dark:hover:border-(--secondary-dark)
+                dark:hover:bg-(--secondary-dark)
                 dark:hover:shadow-[0_8px_30px_rgba(243,166,194,0.10)]
               "
             >
@@ -94,7 +95,7 @@ function Education() {
                     w-10
                     items-center
                     justify-center
-                    rounded-xl
+                    rounded-lg
 
                     border
                     border-gray-200
@@ -105,16 +106,17 @@ function Education() {
                     duration-300
 
                     group-hover:border-white
-                    group-hover:bg-white/20
+                    group-hover:bg-gray-200
 
                     dark:border-gray-700
                     dark:bg-gray-300
 
                     dark:group-hover:border-white
-                    dark:group-hover:bg-white/20
+                    dark:group-hover:bg-gray-300
+
                   "
                 >
-                  🎓
+                  <FaGraduationCap />
                 </div>
 
                 {/* Year */}
