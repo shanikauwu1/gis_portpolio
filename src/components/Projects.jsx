@@ -4,7 +4,7 @@ import projects from "../data/projects.json";
 function Projects() {
   return (
     <section
-      id="projects"
+      id="#projects"
       className="
         border-b
         border-gray-200

@@ -1,6 +1,7 @@
 @import "tailwindcss";
-@custom-variant dark (&:where(.dark, .dark *));
 @import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,400;0,500;1,300&display=swap");
+
+@custom-variant dark (&:where(.dark, .dark *));
 
 :root {
   --secondary: #fe8fab;

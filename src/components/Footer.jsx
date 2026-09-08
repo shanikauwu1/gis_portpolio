@@ -7,10 +7,8 @@ function Footer() {
         border-t
         border-gray-200/70
         bg-gray-50
-
         transition-colors
         duration-300
-
         dark:border-gray-800
         dark:bg-gray-900
       "
@@ -34,33 +32,49 @@ function Footer() {
         "
       >
         {/* ================= SE LOGO ================= */}
-        <div
-          className="
-            relative
-            shrink-0
-            text-xl
-            font-bold
-            tracking-tight
-
-            sm:text-2xl
-          "
-        >
-          <span className="text-gray-800 dark:text-gray-200">S</span>
-
-          <span
+        <div className="shrink-0">
+          <a
+            href="/"
+            aria-label="Home"
             className="
-              absolute
-              left-2.5
-              top-0
-              text-gray-500
+              group
+              relative
+              inline-block
+              text-xl
+              font-bold
+              tracking-tight
+              text-gray-800
+              transition
+              duration-300
 
-              sm:left-3
+              hover:-translate-y-0.5
+              hover:text-(--secondary)
 
-              dark:text-gray-400
+              dark:text-gray-200
+              dark:hover:text-(--secondary-dark)
+
+              sm:text-2xl
+
+        
             "
           >
-            E
-          </span>
+            <span>S</span>
+
+            <span
+              className="
+                text-gray-500
+                transition-colors
+                duration-300
+
+                group-hover:text-(--secondary)
+
+                dark:text-gray-400
+                dark:group-hover:text-(--secondary-dark)
+              "
+            >
+              E
+            </span>
+          </a>
         </div>
 
         {/* ================= COPYRIGHT ================= */}
@@ -95,15 +109,16 @@ function Footer() {
         >
           {/* LinkedIn */}
           <a
-            href="https://www.linkedin.com/"
+            href="https://www.linkedin.com/in/shanikajayawardane/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
             className="
               text-gray-500
-              transition-colors
-              duration-200
+              transition
+              duration-300
 
+              hover:-translate-y-0.5
               hover:text-(--secondary)
 
               dark:text-gray-400
@@ -126,15 +141,16 @@ function Footer() {
 
           {/* GitHub */}
           <a
-            href="https://github.com/"
+            href="https://github.com/shanikauwu1"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
             className="
               text-gray-500
-              transition-colors
-              duration-200
+              transition
+              duration-300
 
+              hover:-translate-y-0.5
               hover:text-(--secondary)
 
               dark:text-gray-400
@@ -157,13 +173,14 @@ function Footer() {
 
           {/* Email */}
           <a
-            href="mailto:your@email.com"
+            href="mailto:shanikau@gmail.com"
             aria-label="Email"
             className="
               text-gray-500
-              transition-colors
-              duration-200
+              transition
+              duration-300
 
+              hover:-translate-y-0.5
               hover:text-(--secondary)
 
               dark:text-gray-400
