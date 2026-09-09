@@ -269,27 +269,27 @@ function ProjectDetails() {
 
         <div
           className="
-            mt-14
-            overflow-hidden
-            rounded-2xl
-            border
-            border-gray-200
-            bg-gray-50
-            shadow-sm
+    mt-14
+    overflow-hidden
+    rounded-2xl
+    border
+    border-gray-200
+    bg-gray-50
+    shadow-sm
 
-            dark:border-gray-800
-            dark:bg-gray-900
-            dark:shadow-black/20
-          "
+    dark:border-gray-800
+    dark:bg-gray-900
+    dark:shadow-black/20
+  "
         >
           <img
             src={project.image}
             alt={project.title}
             className="
-              max-h-[650px]
-              w-full
-              object-cover
-            "
+      w-full
+      max-h-[650px]
+      object-contain
+    "
           />
         </div>
 
@@ -560,81 +560,6 @@ function ProjectDetails() {
             ))}
           </div>
         </section>
-
-        {/* ========================================= */}
-        {/* Gallery */}
-        {/* ========================================= */}
-
-        {project.gallery?.length > 0 && (
-          <section className="mt-20">
-            <div className="mb-10 flex items-center gap-5">
-              <h2
-                className="
-                  text-2xl
-                  font-bold
-                  text-gray-900
-
-                  dark:text-white
-
-                  md:text-3xl
-                "
-              >
-                Project Gallery
-              </h2>
-
-              <div className="h-px flex-1 bg-gray-200 dark:bg-gray-800" />
-            </div>
-
-            <div className="grid gap-6 md:grid-cols-2">
-              {project.gallery.map((item, index) => (
-                <figure
-                  key={index}
-                  className="
-                    group
-                    overflow-hidden
-                    rounded-xl
-                    border
-                    border-gray-200
-                    bg-gray-50
-
-                    dark:border-gray-800
-                    dark:bg-gray-900
-                  "
-                >
-                  <div className="overflow-hidden">
-                    <img
-                      src={item.image}
-                      alt={item.caption}
-                      className="
-                        w-full
-                        object-cover
-                        transition
-                        duration-500
-                        group-hover:scale-105
-                      "
-                    />
-                  </div>
-
-                  <figcaption
-                    className="
-                      border-t
-                      border-gray-200
-                      px-5
-                      py-3
-                      text-sm
-                      text-gray-500
-
-                      dark:border-gray-800
-                      dark:text-gray-400
-                    "
-                  >
-                    {item.caption}
-                  </figcaption>
-                </figure>
-              ))}
-            </div>
-          </section>
-        )}
 
         {/* ========================================= */}
         {/* Back to Projects */}
