@@ -12,7 +12,7 @@
       "LiDAR",
       "NDWI"
     ],
-    "year": "2025",
+    "year": "2026",
     "projectType": "Academic Project",
     "overview": "The objective of this project was to identify and map wetland areas using remote sensing imagery and LiDAR data. The analysis combined spectral information with spatial analysis techniques to produce a detailed wetland map.",
     "objectives": [
@@ -135,75 +135,6 @@
       {
         "image": "/projects/solar.png",
         "caption": "Calgary rooftop solar potential"
-      }
-    ],
-    "links": {
-      "live": "#",
-      "source": "#"
-    }
-  },
-  {
-    "id": "urban-tree-canopy",
-    "title": "Urban Tree Canopy Analysis",
-    "category": "Urban GIS",
-    "shortDescription": "An urban GIS analysis examining tree canopy coverage across Calgary neighbourhoods and calculating canopy area to support better understanding of urban vegetation.",
-    "description": "This project examined urban tree canopy coverage across Calgary neighbourhoods using GIS and spatial analysis techniques.",
-    "image": "/projects/Map.jpg",
-    "technologies": [
-      "ArcGIS Pro",
-      "ArcGIS Online",
-      "Spatial Analysis",
-      "Web GIS"
-    ],
-    "year": "2025",
-    "projectType": "GIS Project",
-    "overview": "The project analyzed tree canopy distribution across Calgary neighbourhoods to better understand urban vegetation patterns.",
-    "objectives": [
-      "Map urban tree canopy.",
-      "Calculate canopy area.",
-      "Compare canopy coverage between neighbourhoods.",
-      "Visualize the results using Web GIS."
-    ],
-    "methodology": [
-      {
-        "step": "01",
-        "title": "Data Preparation",
-        "description": "Prepared tree canopy and neighbourhood boundary datasets."
-      },
-      {
-        "step": "02",
-        "title": "Spatial Analysis",
-        "description": "Performed spatial analysis to determine tree canopy coverage."
-      },
-      {
-        "step": "03",
-        "title": "Area Calculation",
-        "description": "Calculated tree canopy area for each neighbourhood."
-      },
-      {
-        "step": "04",
-        "title": "Web Mapping",
-        "description": "Published and visualized the results using ArcGIS Online."
-      }
-    ],
-    "results": [
-      {
-        "label": "Analysis",
-        "value": "Urban tree canopy coverage"
-      },
-      {
-        "label": "Study Area",
-        "value": "Calgary, Alberta"
-      },
-      {
-        "label": "Output",
-        "value": "Neighbourhood-level canopy analysis"
-      }
-    ],
-    "gallery": [
-      {
-        "image": "/projects/tree-canopy.png",
-        "caption": "Urban tree canopy analysis"
       }
     ],
     "links": {
