@@ -280,7 +280,7 @@ function SolarPotentialProject() {
         <div className="mt-8 flex flex-wrap justify-center gap-3">
           {/* View Full Project */}
           <Link
-            to="/projects/calgary-rooftop-solar"
+            to="/solar-potential"
             className="
               group
               inline-flex
