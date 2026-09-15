@@ -220,7 +220,7 @@ function Navbar() {
         >
           {/* ================= PORTFOLIO ================= */}
           <Link
-            to="/#projects"
+            to="/"
             className="
               group
               relative
@@ -258,7 +258,48 @@ function Navbar() {
               dark:after:bg-(--secondary-dark)
             "
           >
-            Portfolio
+            Home
+          </Link>
+          <Link
+            to="/projects"
+            className="
+              group
+              relative
+              inline-block
+              text-base
+              font-medium
+              text-gray-600
+              transition
+              duration-300
+
+              hover:-translate-y-0.5
+              hover:text-(--secondary)
+
+              dark:text-gray-300
+              dark:hover:text-(--secondary-dark)
+
+              after:absolute
+              after:-bottom-1
+              after:left-0
+              after:h-0.5
+              after:w-full
+              after:origin-left
+              after:scale-x-0
+              after:bg-(--secondary)
+              after:transition-transform
+              after:duration-300
+              after:content-['']
+
+              hover:after:scale-x-100
+
+              sm:text-lg
+
+              md:text-2xl
+
+              dark:after:bg-(--secondary-dark)
+            "
+          >
+            Projects
           </Link>
 
           {/* ================= ABOUT ME ================= */}

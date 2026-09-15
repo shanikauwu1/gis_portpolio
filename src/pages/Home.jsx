@@ -1,6 +1,6 @@
 import Hero from "../components/Hero";
+import HomeProjects from "../components/HomeProjects";
 import Skills from "../components/Skills";
-import Projects from "../components/Projects";
 import StoryMaps from "../components/StoryMaps";
 import SolarPotentialProject from "../components/SolarPotentialProject";
 
@@ -9,7 +9,7 @@ function Home() {
     <main>
       <Hero />
       <Skills />
-      <Projects />
+      <HomeProjects />
       <SolarPotentialProject />
       <StoryMaps />
     </main>
